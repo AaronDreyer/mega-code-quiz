@@ -1,85 +1,140 @@
-:root {
-    --white: #fff;
-    --darkgray: #1C1A1A;
-    --orange: #d1001c;
-}
-
-* {
-    background-color: var(--darkgray);
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 25px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.score {
+#container {
     position: absolute;
-    top: 15px;
-    left: 20px;
-    text-decoration: none;
-    font-size: 25px;
+    left: 30%;
+    top: 20%;
+    width: 500px;
+    height: 500px;
+    border: 1px solid purple;
+}
+#start {
+    background-color: purple;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+#questions {
+    margin: 20px;
+}
+
+#time {
+    float: right;
+}
+
+#goBack {
+    background-color: purple;
+    position: relative;
     padding: 10px;
-    color: var(--darkgray);
-    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
-    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left: 55%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
 }
 
-.score:hover {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.2);
+
+
+#clear {
+    background-color: purple;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    right: 5%;
+    text-align: center;
 }
 
-.time {
-    color: var(--white);
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+button {
+    border-radius: 8px;
+}
 
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+#Submit {
+    background-color: purple;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
 
 h1 {
-    font-size: 80px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 2px;
-}
-
-.home-heading {
-    display: flex;
-    flex-direction: column;
-}
-
-.home-play {
-    justify-content: center;
-    align-items: center;
-}
-
-.btn {
-    text-decoration: none;
-    font-size: 25px;
-    padding: 10px;
-    width: 100px;
     text-align: center;
-    color: var(--darkgray);
-    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
-    border-radius: 5px;
 }
 
-.btn:hover {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.2);
+li {
+    background-color: purple;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+/* Start media queries */
+/* A Media Query max-width: 786px */
+@media screen and (max-width: 786px) {
+/* Resized content to fit 786px  */
+body {
+    max-width: 786px;
+}
+/* Resized main-content to fit 786px  */
+#wrapper {
+position: absolute;
+left: 20%;
+}
+
+a {
+margin-left: 20%;
+}
+#goBack {
+    
+    position: relative;
+    left: 55%;
+}
+
+#clear {
+    
+    position: relative;
+    right: 5%;
+    
+}
+}
+
+/* A Media Query max-width: 640px */
+@media screen and (max-width: 640px) {
+/* Resized content to fit 640px  */
+body {
+    min-width: 640px;
+}
+/* Resized main-content to fit 640px  */
+#wrapper {
+position: absolute;
+left: 10%;
+}
+a {
+  margin-left: 10%;
 }
 
 
+}

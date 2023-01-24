@@ -9,22 +9,27 @@
 </head>
 
     <body>
-        <div>
-            <a href="score.html" class="score">Highscores</a>
+
+        <a href="score.html" class="score">Highscores</a>
+
+        <div class="timer">Time: 
+            <div id="time">0</div>
         </div>
-        <div class="container">
 
-            <div class="time"></div>
+        <main class="container">
 
-            <div id="questions" class="home-heading home-play">
+            <section id="home" class="start" class="home-heading home-play">
                 <h1>Coding Quiz!</h1>
                 <p>Coding quiz boooiiiii</p>
-
-                <ul class="choices"></ul>
-
                 <button id="start" class="btn">Start</button>
-            </div>
-        </div>
+            </section>
+
+            <section class="quiz">
+                <h2 class="questions"></h2>
+                <div class="choices" id="choices"></div>
+            </section>
+            
+        </main>
 
         <script src="./Develop/quiz.js"></script>
     </body>
