@@ -41,6 +41,14 @@ This application demonstrates how to use Web APIs to make a functional website, 
 Credit for the total completion of assignment include: TAs, instructor, and students of the 2022 Georgia Tech Coding Bootcamp. Their assistance allowed for the assignment to meet all requirements.
 
 Following Websites were used:
+- https://youtu.be/f4fB9Xg2JEY
+- https://youtu.be/-cX5jnQgqSM
+- https://youtu.be/f24W7gzdBec
+- https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+- https://www.geeksforgeeks.org/css/
+- https://github.com/jamierachael/Code-Quiz
+- https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
+- https://www.interviewbit.com/javascript-mcq/
 
 ## License
 

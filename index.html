@@ -9,26 +9,27 @@
 </head>
 
     <body>
-
+        <!-- Link to page with highscores -->
         <a href="./score.html" class="score">Highscores</a>
-
-        <div class="timer">Time:
+        <!-- class for timer with set time of zero -->
+        <section class="timer">Time:
             <div id="time">0</div>
-        </div>
+        </section>
 
+        <!-- Main container for quiz -->
         <main class="container">
-
+            <!-- Start Page -->
             <section id="home" class="start">
                 <h1>Coding Quiz!</h1>
                 <p id="note">This is a quiz about coding. Answer all questions within the alloted time limit. Scores are based on time left in quiz and each wrong answer deducts 15 seconds from your time. Try your best to get the highest score. Good Luck!</p>
                 <button id="start" class="btn">Start</button>
             </section>
-
+            <!-- Question Page -->
             <section id="quiz" class="next">
                 <h2 id="questions"></h2>
                 <div class="choices" id="choices"></div>
             </section>
-
+            <!-- Score Submittion -->
             <section id="input" class="next">
                 <p>
                     Final Score:  <div id="score"></div>
@@ -41,7 +42,7 @@
             </section>
 
         </main>
-
+        <!-- Javascript for quiz -->
         <script src="./Develop/quiz.js"></script>
     </body>
 
