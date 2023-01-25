@@ -16,9 +16,9 @@ This is a quiz about coding using html, css, and javascript. The main portion of
 
 ## Link
 
-[Link to deployed website]()
+[Link to deployed website](https://aarondreyer.github.io/mega-code-quiz/)
 
-[Link to Repository]()
+[Link to Repository](https://github.com/AaronDreyer/mega-code-quiz)
 
 
 ## Installation
