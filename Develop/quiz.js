@@ -1,8 +1,9 @@
 var questions = [
+  // Used random sentence and answers to test length of answers fitting within parameters
   {
-    title: "What day is it?",
-    choices: ["1", "2", "3", "4"],
-    answer: "1"
+    title: "How to use word in a sentence? Find typical usage patterns (collocations)/phrases/context for and check conjugation/comparative form for .",
+    choices: ["Monday", "Tuesday", "Wednesday", "Friday"],
+    answer: "Tuesday"
   },
   {
     title: "Test Question?",
@@ -71,10 +72,13 @@ function nextQuestion() {
 
   quizChoices.innerHTML = "";
 
-  currentQuestion.choices.forEach(function(choice, i) {
-    var choiceEl = document.createElement("button");
-    choiceEl.setAttribute("class", "choice");
-    choiceEl.setAttribute("value", choice);
+  // Sytnax error with forEach
+  // Check whats going on????
+
+  // currentQuestion.choices.forEach(function(choice, i) {
+  //   var choiceEl = document.createElement("button");
+  //   choiceEl.setAttribute("class", "choice");
+  //   choiceEl.setAttribute("value", choice);
 
     choiceEl.textContent = i + 1 + ". " + choice;
     choiceEl.onclick = questionChoice;
@@ -121,19 +125,36 @@ function clock() {
   }
 }
 
-function highscore() {
-  
-}
-}
+// Highscore rendering not functioning correctly
 
-function enter(event) {
-  
-}
+// function highscore() {
+//   var name = nameInput.value.trim();
 
-submit.onclick = highscore;
+//   if (name !== "") {
+//     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
-start.onclick = startQuiz;
+//     var newScore = {
+//     score: time,
+//     name: name
+//   };
 
-nameInput.onkeyup = enter;
+//   highscores.push(newScore);
+//   window.localStorage.setItem("highscores", JSON.stringify(highscores));
+
+//   window.location.href = "score.html";
+// }
+// }
+
+// function enter(event) {
+//   if (event.key === "Enter") {
+//     highscore();
+//   }
+// }
+
+// submit.onclick = highscore;
+
+// start.onclick = startQuiz;
+
+// nameInput.onkeyup = enter;
 
 
