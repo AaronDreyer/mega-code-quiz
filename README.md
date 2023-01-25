@@ -31,8 +31,8 @@ Links above bring user to deployed page and github repository
 
 This application demonstrates how to use Web APIs to make a functional website, interactable data selection, and log that data to the website itself. This is a website where you can see the functionality through a quiz, have interactable data through answer selection, and logging of data through highscore recording.
 
-![alt text](assets/images/127.0.0.1_5500_index.html (1).png)
-![alt text](assets/images/127.0.0.1_5500_index.html (2).png)
+![alt text](assets/images/Start-Page.png)
+![alt text](assets/images/Question-Page.png)
 ![alt text](assets/images/127.0.0.1_5500_index.html.png)
 ![alt text](assets/images/127.0.0.1_5500_score.html.png)
 
