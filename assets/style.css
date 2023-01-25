@@ -187,3 +187,27 @@ h1 {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 786px) {
+
+.start h1 {
+    font-size: 50px;
+}
+
+.start p {
+    font-size: 20px;
+}
+
+#questions h2 {
+    font-size: 15px;
+}
+
+.choice button {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.container-score h1 {
+    font-size: 50px;
+}
+}
