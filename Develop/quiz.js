@@ -1,44 +1,43 @@
 var questions = [
-  // Used random sentence and answers to test length of answers fitting within parameters
   {
-    title: "How to use word in a sentence? Find typical usage patterns (collocations)/phrases/context for and check conjugation/comparative form for .",
-    choices: ["Monday", "Tuesday", "Wednesday", "Friday"],
-    answer: "Tuesday"
+    title: "Which of the following methods is used to access HTML elements using Javascript?",
+    choices: ["getElementById()", "getElementsByClassName()", "Both A and B", "None of the above"],
+    answer: "Both A and B"
   },
   {
-    title: "Test Question?",
-    choices: ["1", "2", "3", "4"],
-    answer: "2"
+    title: "Which of the following methods can be used to display data in some form using Javascript?",
+    choices: ["document.write()", "console.log()", "window.alert()", "All of the above"],
+    answer: "All of the above"
   },
   {
-    title: "Test Question?",
-    choices: ["1", "2", "3", "4"],
-    answer: "3"
+    title: "How can a datatype be declared to be a constant type?",
+    choices: ["const", "var", "let", "constant"],
+    answer: "const"
   },
   {
-    title: "Test Question?",
-    choices: ["1", "2", "3", "4"],
-    answer: "4"
+    title: "Javascript is an _______ language?",
+    choices: ["Object-Oriented", "Object-Based", "Procedural", "None of the above"],
+    answer: "Object-Oriented"
   },
   {
-    title: "Test Question?",
-    choices: ["1", "2", "3", "4"],
-    answer: "1"
+    title: "The 'function' and 'var' are known as:",
+    choices: ["Keywords", "Data Types", "Declaration Statements", "Prototypes"],
+    answer: "Declaration Statements"
   },
   {
-    title: "Test Question?",
-    choices: ["1", "2", "3", "4"],
-    answer: "2"
+    title: "Arrays in JavaScript are defined by which of the following statements?",
+    choices: ["It is an ordered list of values", "It is an ordered list of objects", "It is an ordered list of string", "It is an ordered list of functions"],
+    answer: "It is an ordered list of values"
   },
   {
-    title: "Test Question?",
-    choices: ["1", "2", "3", "4"],
-    answer: "3"
+    title: "What is JavaScript?",
+    choices: ["JavaScript is a scripting language used to make the website interactive", "JavaScript is an assembly language used to make the website interactive", "JavaScript is a compiled language used to make the website interactive", "None of the above"],
+    answer: "JavaScript is a scripting language used to make the website interactive"
   },
   {
-    title: "Test Question?",
-    choices: ["1", "2", "3", "4"],
-    answer: "4"
+    title: "Which of the following is not javascript data types?",
+    choices: ["Null Type", "Undefined Type", "Number Type", "All of the above"],
+    answer: "All of the above"
   },
 ];
 
