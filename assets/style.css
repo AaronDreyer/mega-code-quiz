@@ -1,0 +1,189 @@
+:root {
+    --white: #fff;
+    --darkgray: #1C1A1A;
+    --orange: #d1001c;
+}
+
+* {
+    background-color: var(--darkgray);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.next {
+    display: none;
+  }
+
+.score {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    color: var(--darkgray);
+    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
+    border-radius: 5px;
+}
+
+.score:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.timer {
+    display: flex;
+    color: var(--white);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+#time {
+    margin-left: 5px;
+}
+
+.questions {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.start {
+    text-align: center;
+}
+
+#note {
+    color: var(--white);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 25px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 35px;
+    padding: 20px;
+    width: 150px;
+    color: var(--darkgray);
+    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+#questions {
+    color: var(--white);
+    font-size: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+#input p {
+    font-size: 30px;
+    text-align: center;
+    color: var(--white);
+}
+
+#score {
+    font-size: 30px;
+    text-align: center;
+    color: var(--white);
+}
+
+#submit {
+    text-decoration: none;
+    font-size: 25px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--darkgray);
+    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+.choices button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: var(--darkgray);
+    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+.choices button:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.container-score {
+    display: block;
+    text-align: center;
+    margin-top: 300px;
+}
+
+#highscores {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    color: var(--white);
+}
+
+#back {
+    text-decoration: none;
+    font-size: 25px;
+    margin: 5px;
+    padding: 15px;
+    color: var(--darkgray);
+    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+#clear {
+    text-decoration: none;
+    font-size: 25px;
+    margin: 5px;
+    padding: 15px;
+    color: var(--darkgray);
+    background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+#back:hover,
+#clear:hover,
+#submit:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
