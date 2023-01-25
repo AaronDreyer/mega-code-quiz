@@ -72,13 +72,10 @@ function nextQuestion() {
 
   quizChoices.innerHTML = "";
 
-  // Sytnax error with forEach
-  // Check whats going on????
-
-  // currentQuestion.choices.forEach(function(choice, i) {
-  //   var choiceEl = document.createElement("button");
-  //   choiceEl.setAttribute("class", "choice");
-  //   choiceEl.setAttribute("value", choice);
+  currentQuestion.choices.forEach(function(choice, i) {
+    var choiceEl = document.createElement("button");
+    choiceEl.setAttribute("class", "choice");
+    choiceEl.setAttribute("value", choice);
 
     choiceEl.textContent = i + 1 + ". " + choice;
     choiceEl.onclick = questionChoice;
@@ -125,36 +122,34 @@ function clock() {
   }
 }
 
-// Highscore rendering not functioning correctly
+function highscore() {
+  var name = nameInput.value.trim();
 
-// function highscore() {
-//   var name = nameInput.value.trim();
+  if (name !== "") {
+    var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
-//   if (name !== "") {
-//     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+    var newScore = {
+    score: time,
+    name: name
+  };
 
-//     var newScore = {
-//     score: time,
-//     name: name
-//   };
+  highscores.push(newScore);
+  window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
-//   highscores.push(newScore);
-//   window.localStorage.setItem("highscores", JSON.stringify(highscores));
+  window.location.href = "score.html";
+}
+}
 
-//   window.location.href = "score.html";
-// }
-// }
+function enter(event) {
+  if (event.key === "Enter") {
+    highscore();
+  }
+}
 
-// function enter(event) {
-//   if (event.key === "Enter") {
-//     highscore();
-//   }
-// }
+submit.onclick = highscore;
 
-// submit.onclick = highscore;
+start.onclick = startQuiz;
 
-// start.onclick = startQuiz;
-
-// nameInput.onkeyup = enter;
+nameInput.onkeyup = enter;
 
 
